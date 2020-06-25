@@ -19,6 +19,7 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
+|group_name|string||
 
 ## users_groupsテーブル
 |Column|Type|Options|
