@@ -3,7 +3,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|email｜string|null: false|
+|email|string|null: false|
 ### Association
 - has_many :tweets
 
