@@ -6,6 +6,7 @@
 |email|string|null: false|
 ### Association
 - has_many :tweets
+- has_many :groups
 
 ### tweetsテーブル
 |Column|Type|Options|
@@ -20,6 +21,8 @@
 |Column|Type|Options|
 |------|----|-------|
 |group_name|string||
+### Association
+- has_many :users
 
 ## users_groupsテーブル
 |Column|Type|Options|
