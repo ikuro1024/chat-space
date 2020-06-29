@@ -1,4 +1,16 @@
 .main-chat
   .main-chat__group-info
+    .main-top
+      .main-top__group
+        テスト
+      .main-top__list
+        asuka
+    .main-edit
+      = link_to "#" do
+        .main-edit__button
+          Edit
   .main-chat__message-list
   .main-chat__message-form
+    .form
+      %input.form__text{"placeholder": "type a message", "type": "text"}
+      %input.form__btn{"name": "commit", "type": "submit", "value": "Send"}
