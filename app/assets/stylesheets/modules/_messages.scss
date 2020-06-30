@@ -31,6 +31,7 @@
   justify-content: space-between;
   &__name{
     font-size: 16px;
+    font-weight: bold;
     color: #ffffff;
   }
   &__icon{
@@ -75,6 +76,7 @@
   &__message-list{
     height: calc(100vh - 190px);
     width: calc(100vw - 300px);
+    padding: 35px 0 0 40px;
     background-color: #fafafa;
   }
   &__message-form{
@@ -120,25 +122,64 @@
   }
 }
 
+.list {
+  margin-bottom: 46px;
+  &__tweet{
+    margin-top: 12px;
+    font-size: 14px;
+    color: #434a54;
+  }
+}
+
+.list-box {
+  display: flex;
+  &__name{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+  }
+  &__daytime{
+    padding-left: 10px;
+    font-size: 12px;
+    color: #999999;
+  }
+}
+
 .form {
   height: 50px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  &__text{
-    height: 50px;
-    width: calc(100vw - 495px);
-    padding: 0 10px;
-    font-size: 12px;
-    margin-right: 15px;
-    background-color: white;
-    color: #999999;
-  }
   &__btn{
     height: 50px;
     font-size: 16px;
     padding: 0 30px;
+    margin-left: 15px;
+    border: none;
     color: #fff;
     background-color: #38aef0;
+  }
+}
+.form-content {
+  position: relative;
+  width: 100%;
+  &__text{
+    height: 50px;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    border: none;
+    color: #999999;
+  }
+  &__image{
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+  &__icon{
+    font-size: 25px;
+    color: black;
   }
 }

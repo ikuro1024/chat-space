@@ -10,7 +10,19 @@
         .main-edit__button
           Edit
   .main-chat__message-list
+    .list
+      .list-box
+        .list-box__name
+          asuka
+        .list-box__daytime
+          20-06-30-13-00
+      .list__tweet
+        test-test-test-test
   .main-chat__message-form
     .form
-      %input.form__text{"placeholder": "type a message", "type": "text"}
+      .form-content
+        %input.form-content__text{"placeholder": "type a message", "type": "text"}
+        .form-content__image
+          = link_to "#" do
+            = icon('far', 'image', class: "form-content__icon")
       %input.form__btn{"name": "commit", "type": "submit", "value": "Send"}
