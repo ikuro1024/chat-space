@@ -10,19 +10,12 @@
         .main-edit__button
           Edit
   .main-chat__message-list
-    .list
-      .list-box
-        .list-box__name
-          asuka
-        .list-box__daytime
-          20-06-30-13-00
-      .list__tweet
-        test-test-test-test
+    = render @messages
   .main-chat__message-form
-    .form
+    = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
       .form-content
-        %input.form-content__text{"placeholder": "type a message", "type": "text"}
-        .form-content__image
-          = link_to "#" do
-            = icon('far', 'image', class: "form-content__icon")
-      %input.form__btn{"name": "commit", "type": "submit", "value": "Send"}
+        = f.text_field :content, class: 'form-content__text', placeholder: 'type a message'
+        = f.label :image, class: 'form-content__image' do
+          = icon('far', 'image', class: 'form-content__icon')
+          = f.file_field :image, class: 'Hidden'
+      = f.submit 'Send', class: 'form__btn'
