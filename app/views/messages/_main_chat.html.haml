@@ -2,11 +2,12 @@
   .main-chat__group-info
     .main-top
       .main-top__group
-        テスト
+        = @group.name
       .main-top__list
-        asuka
+        - @group.users.each do|user|
+          = user.name
     .main-edit
-      = link_to "#" do
+      = link_to edit_group_path(@group) do
         .main-edit__button
           Edit
   .main-chat__message-list
