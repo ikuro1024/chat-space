@@ -78,6 +78,7 @@
     width: calc(100vw - 300px);
     padding: 35px 0 0 40px;
     background-color: #fafafa;
+    overflow-x: scroll;
   }
   &__message-form{
     height: 90px;
